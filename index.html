@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Link to bootstrap styles sheet, minimal version -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
+    <!-- Special fonts link -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <!-- link to internal styles sheet -->
     <link rel="stylesheet" href="css/styles.css" />
 
 
@@ -14,42 +17,77 @@
 
 </head>
 
+
+<!-- Start of body and Content -->
+
 <body>
 
-    <header class="jumbotron">
+
+
+    <!-- Top Header banner -->
+    <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
                 <div class="col">
 
                     <h1>NuCamp</h1>
+
                     <h2>a better way to camp</h2>
+
+
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Navigation Links. Sticky top makes nav bar stay in place when scrolling-->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <!-- bootstrap button class and navbar collapse into button when screen is small -->
+            <!-- ml-auto pushes nav button to the right of screen -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Write your comments here -->
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item active"> <a class="nav-link" href="aboutus.html">ABOUT</a></li>
+                    <li class="nav-item active"> <a class="nav-link" href="">SITES</a></li>
+                    <li class="nav-item active"> <a class="nav-link" href="">CONTACT</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Write your comments here -->
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Discover & Review</h2>
             </div>
+
+            <!-- Write your comments here -->
             <div class="col">
                 <h3>Our Campsites</h3>
                 <p>Explore our growing database of curated campsites and leave your own reviews!</p>
             </div>
         </div>
-
+        <!-- Write your comments here -->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
                 <h3>React Lake Campground</h3>
-                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React
+                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the
+                    pristine React
                     Lake is a favorite for fly fishers.</p>
             </div>
         </div>
 
+        <!-- Write your comments here -->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Our Community Partners</h2>
@@ -64,21 +102,21 @@
 
     <footer>
 
-
+        <!-- Write your comments here -->
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="aboutus.html">About</a></li>
                         <li><a href="#">Sites</a></li>
                         <li><a href="#">Contact</a></li>
 
                     </ul>
                 </div>
 
-
+                <!-- Bottom links in page -->
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
                     <a href="http://instagram.com/">Instagram</a>
@@ -87,7 +125,7 @@
                     <a href="http://youtube.com/">YouTube</a>
                 </div>
 
-
+                <!-- Bottom contact info -->
                 <div class="col-sm-4 text-center">
 
                     Tel: 1-206-555-1234<br />
@@ -97,6 +135,7 @@
         </div>
 
     </footer>
+    <!-- Script sources and links -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

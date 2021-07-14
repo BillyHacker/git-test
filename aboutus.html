@@ -25,16 +25,43 @@
             </div>
         </div>
     </header>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <!-- bootstrap button class and navbar collapse into button when screen is small -->
+            <!-- ml-auto pushes nav button to the right of screen -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Write your comments here -->
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item active"> <a class="nav-link" href="aboutus.html">ABOUT</a></li>
+                    <li class="nav-item active"> <a class="nav-link" href="">SITES</a></li>
+                    <li class="nav-item active"> <a class="nav-link" href="">CONTACT</a></li>
 
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="row">
             <div class="col">
+                <!-- breadcrumb class Indicate the current page’s location within a navigational hierarchy that automatically adds separators -->
+                <ol class="breadcrumb">
+                    <!-- breadcrumb link inactive but highlighted-->
+                    <li class="breadcrumb-item"><a href="index.html">home</a> </li>
+                    <!-- breadcrumb link active and not highlighted with no href link -->
+                    <li class="breadcrumb-item active">about us</a> </li>
+
+                </ol>
+
                 <h2>About Us</h2>
                 <hr />
             </div>
         </div>
 
-        <div class="row">
+        <div class="row row-content">
             <div class="col col-6">
                 <h3>Our Mission</h3>
                 <p>We present a curated database of the best campsites in the vast woods and backcountry of the World
@@ -45,26 +72,37 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row row-content">
             <div class="col">
                 <h3>Community Partners</h3>
                 <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
-                <p>Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
+                <!-- p class hide contents with screen size get smaller -->
+                <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you
+                    can't beat. </p>
                 <h4>Git Out Expeditions <small>Group Adventure Expeditions</small></h4>
-                <p>Join Git Out Expeditions to explore new horizons with a group of other adventurers!</p>
+                <!-- p class hide contents with screen size get smaller -->
+                <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of other
+                    adventurers!</p>
                 <h4>Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></h4>
-                <p>Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.</p>
+                <!-- p class hide contents with screen size get smaller -->
+                <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo
+                    Fly Shop.</p>
                 <h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
-                <p>From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you
+                <!-- p class hide contents with screen size get smaller -->
+                <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node
+                    will be sure to get you
                     covered.</p>
             </div>
         </div>
     </div>
 
+
+    <!-- Start of footer at bottom of page with container -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
+                    <!-- link other pages inside website -->
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.html">Home</a></li>
@@ -73,6 +111,8 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
+
+                <!-- social links -->
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
                     <a href="http://instagram.com/">Instagram</a>
@@ -80,6 +120,8 @@
                     <a href="http://twitter.com/">Twitter</a>
                     <a href="http://youtube.com/">YouTube</a>
                 </div>
+
+                <!-- Contact info -->
                 <div class="col-sm-4 text-center">
                     Tel: 1-206-555-1234<br />
                     Email: campsites@nucamp.co
