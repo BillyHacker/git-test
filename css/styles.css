@@ -38,6 +38,15 @@ header h2 {
     background-color: #901cad;
 }
 
+.carousel-caption{
+    background-color: rgba(0, 0, 0 0.5);
+    text-shadow: #3046C5;
+}
+
+.carousel{
+    border: solid #5637DD;
+}
+
 /* you can also remove the .tab-content CSS rule 
 .tab-content{
     border: 1px solid #ddd;
