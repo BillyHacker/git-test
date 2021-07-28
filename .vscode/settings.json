@@ -1,4 +1,5 @@
 {
     "editor.inlineSuggest.enabled": true,
-    "editor.suggest.shareSuggestSelections": true
+    "editor.suggest.shareSuggestSelections": true,
+    "git.ignoreLimitWarning": true
 }

@@ -40,8 +40,7 @@
                 </div>
                 <!--MODAL RESERVE BUTTON-->
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <a role="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#reserveModal">Reserve
-                        Campsite</a>
+                    <a role="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
 
                 </div>
             </div>
@@ -60,10 +59,10 @@
                     <div class="container-fluid">
                         <form id="reserveForm">
                             <div class="mt-2 row">
-                                <div class="col">
-                                    <label>
-                                        Number of Campers</label>
-                                </div>
+                            <div class="col">
+                                <label>
+                                Number of Campers</label>
+                            </div>
                                 <div class="col">
                                     <select name="numCampers" id="numCampers" class="form-control">
                                         <option selected>Select</option>
@@ -83,51 +82,43 @@
                                     <label>Date</label>
                                 </div>
 
-                                <div class="col-6">
-                                    <input type="text" class="form-control" id="formGroupExampleInput"
-                                        placeholder="mm/dd/yyyy">
-                                </div>
-
-
-
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="mm/dd/yyyy">
+                                    </div>
+                                
+                            
+                            
                             </div>
 
                             <div class="row mt-2">
 
-                                <div class="col col-sm-6">
+                                <div class="col-6">
                                     <label>Campsite Type</label>
                                 </div>
 
                                 <div class="col-6">
-                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-success active">
-                                            <input type="radio" name="options" id="siteTent" autocomplete="off" checked>
-                                            Tent
-                                        </label>
-                                        <label class="btn btn-primary">
-                                            <input type="radio" name="options" id="siteRV" autocomplete="off"> RV
-                                        </label>
-                                    </div>
+                                    <button type="button" class="btn btn-success">Tent </button>
+                                    <button type="button" class="btn btn-primary">RV </button>
                                 </div>
                             </div>
+                            
+                            
+                            </div>
+                            <div class="row">  
+                                <div class="col ml-1 mb-1">
+                                <button type="button" data-dismiss="modal" class="btn btn-secondary">Cancel </button>
+                                <button type="button" class="btn btn-primary">Search </button>
+                                </div>
 
 
+                            </div>
+
+                        </form>
                     </div>
-                    <div class="row">
-                        <div class="col ml-1 mb-1">
-                            <button type="button" data-dismiss="modal" class="btn btn-secondary">Cancel </button>
-                            <button type="button" class="btn btn-primary">Search </button>
-                        </div>
 
-
-                    </div>
-
-                    </form>
                 </div>
-
             </div>
         </div>
-    </div>
     </div>
     <!--END OF RESERVE MODAL-->
 
@@ -163,7 +154,7 @@
             </div>
         </div>
     </nav>
-    <!--LOGIN MODAL-->
+<!--LOGIN MODAL-->
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
