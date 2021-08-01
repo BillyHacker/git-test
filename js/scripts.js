@@ -12,3 +12,16 @@ $(function () {
         }
     });
 });
+
+// Function for Login and reserve button modal:
+$(function () {
+
+    $("#reserveButton").click(function () {
+        $("#reserveModal").modal();
+    });
+
+    $("#loginButton").click(function () {
+        $("#loginModal").modal();
+    });
+
+});

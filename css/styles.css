@@ -40,3 +40,13 @@ header h2 {
   right: 0;
   bottom: 0;
   z-index: 100; }
+
+/* Modal Reserve Header */
+#reserveModal .modal-header {
+  background-color: #17A2B8;
+  color: white; }
+
+/* Modal Login Header*/
+#loginModal .modal-header {
+  background-color: #901CAD;
+  color: white; }
